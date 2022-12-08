@@ -13,7 +13,12 @@ resource "aws_security_group" "vm_security_group" {
     protocol        = "tcp"
     security_groups = [aws_security_group.elb_security_group.id]
   }
-
+  ingress {
+    from_port       = 22
+    to_port         = 22
+    protocol        = "tcp"
+    security_groups = [aws_security_group.bastion_security_group.id]
+  }
   egress {
     from_port   = 0
     to_port     = 0

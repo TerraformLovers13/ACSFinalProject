@@ -8,6 +8,7 @@ variable "cidr_block_range" {
 
 variable "env" {
   default = "dev"
+  
 }
 
 
@@ -39,7 +40,7 @@ variable "image_id" {
 
 variable "instanceType" {
   default = {
-    dev     = "t2.micro"
+    dev     = "t3.micro"
     staging = "t3.small"
     prod    = "t3.medium"
   }
@@ -53,4 +54,8 @@ variable "keyName" {
 
 variable "vmprefix" {
   default = "id_rsa"
+}
+
+variable "bucketname"{
+  default = "dev-terraformlovers"
 }
