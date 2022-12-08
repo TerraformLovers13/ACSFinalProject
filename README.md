@@ -1,1 +1,1 @@
-# ACSFinalProject
+to run this project we need to create a s3 bucket named acs730-skoochakpour
