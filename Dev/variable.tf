@@ -22,10 +22,19 @@ variable "cidr_block_range" {
   default = "10.100.0.0/16"
 }
 
-variable "env"{
-    default = "dev"
+variable "env" {
+  default = "dev"
 }
 
-variable "bucketname"{
+variable "bucketname" {
   default = "dev-terraformlovers"
+}
+
+variable "desirestate" {
+  default = 2
+  type    = number
+}
+
+variable "path"{
+  default = "../Dev/"
 }
