@@ -59,3 +59,7 @@ variable "vmprefix" {
 variable "bucketname" {
   default = "dev-terraformlovers"
 }
+variable "desirestate" {
+  default = 2
+  type = number
+}
