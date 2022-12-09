@@ -38,4 +38,4 @@ echo "<html>
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo mkdir /var/www/images
-sudo aws s3 sync s3://${ver.env}-terraformlovers/images/ /var/www/html
+sudo aws s3 sync s3://${env}-terraformlovers/images/ /var/www/html

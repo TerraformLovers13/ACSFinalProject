@@ -27,6 +27,6 @@ variable "env"{
 }
 
 variable "desirestate" {
-  default = 2
+  default = 3
   type = number
 }
