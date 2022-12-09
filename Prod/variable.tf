@@ -30,3 +30,6 @@ variable "desirestate" {
   default = 3
   type = number
 }
+variable "path"{
+  default = "../Prod/"
+}

@@ -37,4 +37,4 @@ echo "<html>
 "  >  /var/www/html/index.html
 sudo systemctl start httpd
 sudo systemctl enable httpd
-sudo aws s3 sync s3://dev-terraformlovers/images/ /var/www/html
+sudo aws s3 sync s3://prod-terraformlovers/images/ /var/www/html

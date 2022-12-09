@@ -34,3 +34,7 @@ variable "desirestate" {
   default = 2
   type    = number
 }
+
+variable "path"{
+  default = "../Dev/"
+}

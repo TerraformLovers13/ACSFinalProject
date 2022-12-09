@@ -32,7 +32,7 @@ resource "aws_launch_configuration" "launchconfig" {
   instance_type        = lookup(var.instanceType, var.env, "dev")
   key_name             = aws_key_pair.vm_key.key_name
   security_groups      = [aws_security_group.vm_security_group.id]
-  user_data            = file("${path.module}/install_httpd.sh")
+  user_data            = file("${var.path}/install_httpd.sh")
   iam_instance_profile = "LabInstanceProfile"
 
   lifecycle {
