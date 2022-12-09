@@ -8,7 +8,7 @@ variable "cidr_block_range" {
 
 variable "env" {
   default = "dev"
-  
+
 }
 
 
@@ -56,6 +56,6 @@ variable "vmprefix" {
   default = "id_rsa"
 }
 
-variable "bucketname"{
+variable "bucketname" {
   default = "dev-terraformlovers"
 }
