@@ -25,3 +25,8 @@ variable "cidr_block_range" {
 variable "env"{
     default = "dev"
 }
+
+variable "desirestate" {
+  default = 2
+  type = number
+}
