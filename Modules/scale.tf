@@ -32,7 +32,7 @@ resource "aws_launch_configuration" "launchconfig" {
   instance_type        = lookup(var.instanceType, var.env, "dev")
   key_name             = aws_key_pair.vm_key.key_name
   security_groups      = [aws_security_group.vm_security_group.id]
-  user_data            = file("${path.module}/install_httpd.sh")
+  user_data            = file("${var.path}/install_httpd.sh")
   iam_instance_profile = "LabInstanceProfile"
 
   lifecycle {
@@ -49,7 +49,7 @@ resource "aws_autoscaling_group" "scallingGroup" {
   min_size                  = 1
   health_check_grace_period = 300
   health_check_type         = "ELB"
-  desired_capacity          = 2
+  desired_capacity          = var.desirestate
   force_delete              = true
   launch_configuration      = aws_launch_configuration.launchconfig.name
   target_group_arns         = [aws_lb_target_group.target_group.arn]
