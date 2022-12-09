@@ -1,3 +1,6 @@
+[![Lint](https://github.com/TerraformLovers13/ACSFinalProject/actions/workflows/tflint.yml/badge.svg)](https://github.com/TerraformLovers13/ACSFinalProject/actions/workflows/tflint.yml)
+      [![tfsec](https://github.com/TerraformLovers13/ACSFinalProject/actions/workflows/tfsec.yml/badge.svg)](https://github.com/TerraformLovers13/ACSFinalProject/actions/workflows/tfsec.yml)
+
 Cloud Architecture & Administration - Seneca
 Cloud Automation and Control Systems (ACS730)  
 Professor: Irina Geiman
